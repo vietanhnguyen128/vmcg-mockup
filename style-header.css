@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  background: #bbbbbb;
+}
+
+.company-logo {
+  flex-basis: 60%;
+}
+
+.company-logo img {
+  width: 120px;
+}
+
+ul.menu-main * {
+  list-style: none;
+}
+
+.menu, .menu-main {
+  display: flex;
+  position: relative;
+}
+
+.menu-main {
+  margin: 0;
+}
+
+ul.menu-main > li {
+  padding: 10px 20px;
+}
+
+.menu-sub-1 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  background-color: darkcyan;
+  left: 0;
+  top: 100%;
+  display: none;
+}
+
+.menu-sub-2 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  background-color: darkgray;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+
+ul.menu-sub-1 li {
+  padding: 10px 20px;
+}
+
+ul.menu-sub-2 li {
+  padding: 10px 20px;
+}
+
+.menu-sub-1 .menu-sub-2 {
+  top: 0;
+  left: 100%;
+}
+
+.has-submenu {
+  position: relative;
+}
+
+.has-submenu:hover > .menu-sub-1, .menu-sub-1:hover > .menu-sub-2, .has-submenu:hover > .menu-sub-2 {
+  display: block;
+}
