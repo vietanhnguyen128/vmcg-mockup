@@ -3,16 +3,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
+.navbar-container {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9999;
 }
 
 .navbar {
   display: flex;
-  background: #bbbbbb;
+  background: rgba(0,0,0,0.2);
   justify-content: center;
   align-items: center;
 }
