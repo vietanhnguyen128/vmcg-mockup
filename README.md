@@ -5,3 +5,4 @@
 - 27/03/2020: Add basic navigation bar layout.
 - 28/03/2020: Add footer.
 - 28/03/2020: Update header background.
+- 30/03/2020: Update business section.
