@@ -33,6 +33,14 @@ body {
 /* The above section is the same as business.css
    Remember to remove duplicate style!
 */
+.academies .content-header h2 {
+  font-weight: 700;
+}
+
+.academies .content-header h5 {
+  padding-bottom: 8px;
+}
+
 
 .header-separator-line {
   margin: 0 auto;
@@ -43,3 +51,97 @@ body {
 }
 
 /* The above is the same as incubators.css */
+
+.academies {
+  padding-bottom: 180px;
+}
+
+.academy-list {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.academy-detail {
+  flex-basis: 25%;
+  text-align: center;
+}
+
+.image-section {
+  width: 260px;
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.strategy {
+  background-image: url(../images/academies/strategy.jpg);
+}
+
+.baa {
+  background-image: url(../images/academies/baa.jpg);
+}
+
+.data {
+  background-image: url(../images/academies/data.jpg);
+}
+
+.kiddicode {
+  background-image: url(../images/academies/kiddicode.jpg);
+}
+
+.digigen {
+  background-image: url(../images/academies/digigen.jpg);
+}
+
+.image-overlay {
+  height: 0;
+  background-color: rgba(10, 10, 10, 0.65);
+  transition: height 0.2s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.image-overlay span {
+  display: block;
+  margin: auto;
+  width: 80%;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 1.5px solid red;
+  font-size: 12px;
+  font-weight: 400;
+  transition:  transform 0.2s ease;
+}
+
+.academy-detail:hover .image-overlay {
+  height: 100%;
+}
+
+.academy-detail:hover span {
+ transform: translate(0, 180px);
+}
+
+.academy-detail a {
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.2s;
+  display: inline-block;
+  padding: 20px 0;
+}
+
+.academy-detail a:hover {
+  color: rgb(209, 160, 118);
+}
+
