@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content-header {
+  margin: 0 auto;
+  width: 400px;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+.content-header h2, .content-header h5 {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content-header h2 {
+  font-size: 30px;
+  font-weight: 700;
+
+  display: block;
+  padding-bottom: 20px;
+}
+
+.content-header h5 {
+  color: rgb(147, 147, 147);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+/* The above section is the same as business.css
+   Remember to remove duplicate style!
+*/
+
+.incubators {
+  margin-bottom: 120px;
+}
+
+.incubator-list {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.incubator-article {
+  flex-basis: 32%;
+  background-color: rgb(247, 247, 247);
+  padding-bottom: 55px;
+}
+
+.incubators .content-header h2 {
+  font-weight: 600;
+}
+
+.incubators .content-header h5 {
+  padding-bottom: 8px;
+}
+
+.header-separator-line {
+  margin: 0 auto;
+  display: block;
+  width: 25%;
+  height: 1px;
+  background-color: red;
+}
+
+.incubator-image {
+  padding-bottom: 30px;
+}
+
+.incubator-image img {
+  width: 100%;
+}
+
+.incubator-detail {
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid gray;
+}
+
+.incubator-detail a:link {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.incubator-detail a:visited {
+  color: black;
+}
+
+.incubator-detail a:hover {
+  color: rgb(209, 160, 118);
+}
+
+.incubator-detail p {
+  font-size: 14px;
+  line-height: 1.5rem;
+  color: rgb(111, 111, 111);
+}
+
+.banner-contact-us {
+  width: 100%;
+  background-image: url(../images/contact-us-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 70px 0;
+  text-align: center;
+}
+
+.banner-text, .banner-button {
+  display: inline-block;
+}
+
+.banner-text {
+  padding-right: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.banner-button a {
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  padding: 8px 24px;
+  background-color: white;
+  border: 2px solid white;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.banner-button a:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.banner-overlay {
+  background-color: rgba(28, 28, 28, 0.75);
+}
