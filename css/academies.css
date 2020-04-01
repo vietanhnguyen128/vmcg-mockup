@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content-header {
+  margin: 0 auto;
+  width: 400px;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+.content-header h2, .content-header h5 {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content-header h2 {
+  font-size: 30px;
+  font-weight: 700;
+
+  display: block;
+  padding-bottom: 20px;
+}
+
+.content-header h5 {
+  color: rgb(147, 147, 147);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+/* The above section is the same as business.css
+   Remember to remove duplicate style!
+*/
+
+.header-separator-line {
+  margin: 0 auto;
+  display: block;
+  width: 25%;
+  height: 1px;
+  background-color: red;
+}
+
+/* The above is the same as incubators.css */
