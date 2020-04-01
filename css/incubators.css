@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .content-header {
@@ -27,4 +28,74 @@ body {
   color: rgb(147, 147, 147);
   font-weight: 500;
   font-size: 12px;
+}
+
+/* The above section is the same as business.css
+   Remember to remove duplicate style!
+*/
+
+.incubator-list {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.incubator-article {
+  flex-basis: 32%;
+  background-color: rgb(247, 247, 247);
+  padding-bottom: 55px;
+}
+
+.incubators .content-header h2 {
+  font-weight: 600;
+}
+
+.incubators .content-header h5 {
+  padding-bottom: 8px;
+}
+
+.header-separator-line {
+  margin: 0 auto;
+  display: block;
+  width: 25%;
+  height: 1px;
+  background-color: red;
+}
+
+.incubator-image {
+  padding-bottom: 30px;
+}
+
+.incubator-image img {
+  width: 100%;
+}
+
+.incubator-detail {
+  margin: 0 auto;
+  width: 80%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid gray;
+}
+
+.incubator-detail a:link {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.incubator-detail a:visited {
+  color: black;
+}
+
+.incubator-detail a:hover {
+  color: rgb(209, 160, 118);
+}
+
+.incubator-detail p {
+  font-size: 14px;
+  line-height: 1.5rem;
+  color: rgb(111, 111, 111);
 }
