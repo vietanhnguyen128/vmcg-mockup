@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family:  "Montserrat", sans-serif;
+  background-color: rgb(247, 247, 247);
+}
+
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.blog-post {
+  flex-basis: 32%;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+
+.blog-image {
+  position: relative;
+}
+
+.blog-image img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  display: block;
+}
+
+.blog-image .blog-overlay {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 9px 18px;
+  background-color: white;
+  color: rgb(209, 160, 118);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-decoration: none;
+}
+
+.main-section {
+  width: 80%;
+  margin: 0 auto;
+  color: rgb(147, 147, 147);
+}
+
+.blog-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.author {
+  border-bottom: 1px solid rgb(111, 111, 111);
+  padding-bottom: 20px;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.author-link {
+  text-decoration: none;
+  color: rgb(147, 147, 147);
+  transition: color 0.3s;
+}
+
+.author-link:hover {
+  color: rgb(209, 160, 118);
+}
+
+.summary {
+  height: 100px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-bottom: 40px;
+  overflow: hidden;
+}

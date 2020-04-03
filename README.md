@@ -7,3 +7,5 @@
 - 28/03/2020: Update header background.
 - 30/03/2020: Update business section.
 - 01/04/2020: Add incubators section and contact us banner.
+- 03/04/2020: Add blog post section.
+
