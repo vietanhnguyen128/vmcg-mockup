@@ -14,6 +14,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 100;
+  transition: background-color 0.3s ease-in;
 }
 
 .navbar {
@@ -60,7 +61,7 @@ body {
 }
 
 /* Navbar, menu & white background */
-.navbar.white {
+.wrapper.white {
   background-color: #ffffff;
 }
 
