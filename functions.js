@@ -1,27 +1,18 @@
-var navbar = document.getElementsByClassName("navbar-container")[0];
-var menumain = document.getElementsByClassName("menu-main")[0];
-var myLogo = document.getElementById("logo");
-var navbarLink = document.getElementsByClassName("navbar-link")
+var myLogo = document.getElementById("logo")
+var wrapper =  document.getElementsByClassName("wrapper")[0];
+var menu = document.getElementsByClassName("menu-main")[0];
 
 window.onscroll = function() {
   if (window.scrollY >= 50 ) {
-    navbar.classList.add("navbar-container--white");
-    menumain.classList.add("menu-main--white");
-
-    for (var item of navbarLink) {
-      item.classList.add("navbar-link--dark");
-    }
-
     myLogo.src = "../images/VMCGLogoBlack.png";
+
+    wrapper.classList.add("white");
+    menu.classList.add("white");
   } 
   else {
-      navbar.classList.remove("navbar-container--white");
-      menumain.classList.remove("menu-main--white");
+    myLogo.src = "../images/VMCGLogoWhiteBrown.png";
 
-      for (var item of navbarLink) {
-        item.classList.remove("navbar-link--dark");
-      }
-
-      this.myLogo.src = "../images/VMCGLogoWhiteBrown.png";
+    wrapper.classList.remove("white");
+    menu.classList.remove("white");
   }
 };

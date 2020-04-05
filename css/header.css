@@ -5,27 +5,30 @@
 body {
   margin: 0;
 }
+/* Universal change */
 
-.navbar-container {
+.wrapper {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
-  color: #ffffff;
-  background: rgba(0,0,0,0.2);
+  left: 0;
+  width: 100%;
   z-index: 100;
+  transition: background-color 0.3s ease-in;
 }
 
 .navbar {
   width: 75%;
-  height: 100%;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
+  color: #000000;
 }
 
+
+/* Logo section */
 .company-logo {
+  display: block;
   margin-right: auto;
 }
 
@@ -33,107 +36,118 @@ body {
   width: 120px;
 }
 
-.menu-main * {
-  list-style: none;
+
+/* Menu section */
+.menu * {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.menu-main {
+  display: flex;
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.menu {
-  display: flex;
-  position: relative;
-  align-self: stretch;
+.menu-main > li > a {
+  color: #ffffff;
 }
 
-.menu-main {
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.menu-main > li {
-  padding: 25px 20px;
-}
-
-.menu-sub-1 {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  background-color: rgb(35, 35, 35);
+.menu-main > li:hover > a {
   color: rgba(255, 255, 255, 0.6);
-  left: 0;
-  top: 100%;
-  display: none;
-  white-space: nowrap;
 }
 
-.menu-sub-2 {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  background-color: rgb(35, 35, 35);
-  color: rgba(255, 255, 255, 0.6);
-  top: 100%;
-  left: 0;
-  display: none;
-  white-space: nowrap;
+/* Navbar, menu & white background */
+.wrapper.white {
+  background-color: #ffffff;
 }
 
-.menu-sub-2 li {
-  padding: 20px 30px;
-  transition: color 0.3s;
-  box-sizing: border-box;
+.menu-main.white > li > a {
+  color: #000000;
 }
 
-.menu-sub-1 .menu-sub-2 li {
-  text-transform: capitalize;
+.menu-main.white > li:hover > a {
+  color: rgba(0, 0, 0, 0.6);
 }
 
-.menu-sub-1 .menu-sub-2 {
-  top: 0;
-  left: 100%;
+
+/* Has link */
+.has-link a {
+  display: block;
+  padding: 25px 30px;
+  transition: color 0.2s ease-in;
 }
 
-.menu-sub-1 li {
-  padding: 20px 30px;
-  box-sizing: border-box;
-}
-
-.menu-sub-1 > li > span {
-  display: inline-block;
-  transition: color 0.3s, transform 0.3s;
-}
-
-.menu-sub-1 > li > span:hover, .menu-sub-2 > li:hover {
-  color: white;
-}
-
-.menu-sub-1 > li:hover > span {
-  transform: translate(10px, 0);
-}
-
+/* Has submenu */
 .has-submenu {
   position: relative;
 }
 
-.has-submenu:hover > .menu-sub-1, .menu-sub-1:hover > .menu-sub-2, .has-submenu:hover > .menu-sub-2 {
+/* Submenu 1 */
+.submenu-1 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(35, 35, 35);
+  display: none;
+}
+
+.has-submenu:hover > .submenu-1 {
   display: block;
 }
 
-.navbar-link {
-  text-decoration: none;
+.submenu-1 > li > a {
+  display: inline-block;
+  color: rgb(157, 157, 157);
+  padding: 15px 30px;
+  transition: transform 0.3s;
+}
+
+.submenu-1 > li {
+  display: block;
+}
+
+.submenu-1 a:hover {
   color: #ffffff;
 }
 
-.menu-main > li, .navbar-link {
-  transition: color 0.2s;
+/* Submenu 2 */
+.submenu-2 {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: rgb(35, 35, 35);
+  white-space: nowrap;
+  display: none;
 }
 
-.menu-main > li:hover, a.navbar-link:hover {
-  color: rgba(255, 255, 255, 0.6);
+.has-submenu:hover > .submenu-2 {
+  display: block;
+}
+
+.submenu-2 > li {
+  display: block;
+}
+
+.submenu-2 > li > a {
+  display: inline-block;
+  color: rgb(157, 157, 157);
+  padding: 15px 20px;
+}
+
+.submenu-2 a:hover {
+  color: #ffffff;
+}
+
+/* Text styling */
+.capitalize a {
+  text-transform: capitalize;
+}
+
+/* Transformation */
+.submenu-1 a:hover.translate-right {
+  transform: translate(10px, 0);
 }
