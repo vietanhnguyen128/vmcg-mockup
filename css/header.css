@@ -8,12 +8,17 @@ body {
 /* Universal change */
 
 .wrapper {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   width: 100%;
-  background-color: cadetblue;
+  background-color: rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.wrapper * {
+  transition: all 0.3s ease-in;
 }
 
 .navbar {
@@ -51,10 +56,18 @@ body {
   text-transform: uppercase;
 }
 
+.menu-main > li > a {
+  color: #ffffff;
+}
+
+.menu-main > li:hover > a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 
 /* Has link */
 .has-link {
-  background-color: chartreuse;
+
 }
 
 .has-link a {
@@ -72,7 +85,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: darkgray;
+  background-color: rgb(35, 35, 35);
   display: none;
 }
 
@@ -81,11 +94,16 @@ body {
 }
 
 .submenu-1 > li > a {
-  padding: 15px 40px;
+  color: rgb(157, 157, 157);
+  padding: 15px 30px;
 }
 
 .submenu-1 > li {
   display: block;
+}
+
+.submenu-1 a:hover {
+  color: #ffffff;
 }
 
 /* Submenu 2 */
@@ -93,7 +111,7 @@ body {
   position: absolute;
   top: 0;
   left: 100%;
-  background-color: cornflowerblue;
+  background-color: rgb(35, 35, 35);
   white-space: nowrap;
   display: none;
 }
@@ -107,5 +125,20 @@ body {
 }
 
 .submenu-2 > li > a {
+  color: rgb(157, 157, 157);
   padding: 15px 20px;
+}
+
+.submenu-2 a:hover {
+  color: #ffffff;
+}
+
+/* Text styling */
+.capitalize a {
+  text-transform: capitalize;
+}
+
+/* Transformation */
+a.translate-left {
+  transform: translate(10px, 0);
 }
