@@ -21,6 +21,7 @@ body {
   margin: auto;
   display: flex;
   align-items: center;
+  color: #000000;
 }
 
 
@@ -41,7 +42,6 @@ body {
   padding: 0;
   text-decoration: none;
   list-style-type: none;
-  color: black;
 }
 
 .menu-main {
@@ -59,12 +59,25 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* Navbar, menu & white background */
+.navbar.white {
+  background-color: #ffffff;
+}
+
+.menu-main.white > li > a {
+  color: #000000;
+}
+
+.menu-main.white > li:hover > a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 
 /* Has link */
 .has-link a {
   display: block;
   padding: 25px 30px;
-  transition: color 0.3s ease-in;
+  transition: color 0.2s ease-in;
 }
 
 /* Has submenu */
