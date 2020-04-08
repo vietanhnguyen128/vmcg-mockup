@@ -9,5 +9,6 @@
 - 01/04/2020: Add incubators section and contact us banner.
 - 03/04/2020: Add blog post section.
 - 04/04/2020: Clean up header css. Merge header and background top.
+- 06/04/2020: Merge website components to index.html.
 
 
