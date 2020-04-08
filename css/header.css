@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  background-color: rgb(247, 247, 247);
 }
 /* Universal change */
 
@@ -63,6 +64,7 @@ body {
 /* Navbar, menu & white background */
 .wrapper.white {
   background-color: #ffffff;
+  box-shadow: 0 0 10px rgb(157, 157, 157);
 }
 
 .menu-main.white > li > a {
