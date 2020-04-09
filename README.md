@@ -10,5 +10,6 @@
 - 03/04/2020: Add blog post section.
 - 04/04/2020: Clean up header css. Merge header and background top.
 - 06/04/2020: Merge website components to index.html.
+- 09/04/2020: Add scroll banner. Add animations.
 
 
