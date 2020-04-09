@@ -1,9 +1,15 @@
+.blog-wrapper {
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+  padding-bottom: 200px;
+}
+
 .blog {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 75%;
-  margin: 0 auto 200px;
+  margin: 0 auto;
 }
 
 .blog-post {
